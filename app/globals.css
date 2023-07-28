@@ -572,6 +572,7 @@ video.responsive-video {
 }
 .MaclariListele {
   background: #3e3e3e;
+  margin: auto;
   border: 1px solid #464646;
   border-top: none;
   padding: 25px 0 15px;

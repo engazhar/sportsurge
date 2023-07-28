@@ -6,6 +6,26 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Link from 'next/link';
 
+const pop_events= [
+  {
+    id: 1,
+    url: "link",
+    title: "Formula 1 2023 - Belgium GP Live Stream",
+    type: "formula-1",
+    time: "07:30 AM ET"
+  },
+  {
+    id: 2,
+    url: "link",
+    title: "England W vs Denmark W Live Stream",
+    type: "soccer",
+    time: "07:30 AM ET",
+    team_a: "England",
+    team_b: "Denmark"
+  },
+
+]
+
 export default function Home() {
   return (
     <main className="overflow-hidden">
@@ -17,6 +37,7 @@ export default function Home() {
             <h1>Sportsurge</h1>
           </Col>
         </Row>
+
         <Row>
           <Col xs={12} md={12} className='text-center'>
             <h3>What do you want to watch today?</h3>
@@ -109,6 +130,31 @@ export default function Home() {
                 WATCH
                 </Col>
               </Row>
+
+              {
+                pop_events.map(event=>(
+                  <div>
+                      {
+                          event.type == 'formula-1'
+                          ? <a href="#" title={event.title} className="row MaclariListele align-items-center align-content-center">
+                            <Col xs={4}>
+                            {event.title}
+                            </Col>
+                            <Col xs={3}>
+                              <Image src="icon-f1.png" alt="formula-1-icon" className="responsive-img"/>
+                            </Col>
+                            <Col xs={3}>
+                            {event.time}
+                            </Col>
+                            <Col xs={1}>
+                            <Image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAB/ElEQVRIie2VsWsUQRjF37d3np3FIQiCR25nj7vS4mIhiIgWaUxxSWUEsRELFQRrBUX/ApsUgkKCkQSLNFqoIIKg3n9wO7tgERDCgYiI7N08m1sYbG5ml02VV833mO/9+GaGXeBQByRx2aS1/gDgwqz8mmXZpV6v96sMOHDcd8xan6nX6xskXXuLg4MgWAWwn9cisqy1flgG7HTUAJAkyTmS7wA0ZhYBrCmlXhYBOx9XGIafSN6zLAHwTGu9WATsPHGuJEnWSd7Ia5J7jUZjsdVq7fnkeD+Q8Xh8i+THvBaRk1mWbY9Go6OVgvv9fjadTlcBpJZ9tlarrVcKBoBut7sfBMEAwO/cI3ktjuPbrhned2xLaz0AsGPlTElejqLozbzeUh8BpdRrkk8sqyYiG3EcR5WCZ/D7JHctqykim5WDi6o0WGv9SESWLWtMcm1eX9nHtQJg28qZAFhSSr2f11t44jRNTwN4YUEhInddoEDBiZMkOUHyG4BTlv1cKXXdNcN74uFweMQY8+o/6GdjzE2fHG9ws9l8KiLnLeu7iAw6nc7fysBxHN+x/0wA/gBYCcPwh08O4HHHWuuLAN4CqM8skrwSRdGWLxRwnDhN0wUAWxYUIvK4KNQZbIzZAXA8r0nuttvtB0WhzmAAP631l8lkclVETBnwoQ5M/wBTeLAZ7QRNBwAAAABJRU5ErkJggg==" alt="watch" className="responsive-img"/>
+                            </Col>
+                          </a>
+                          : 'Hello, world!'
+                      }
+                  </div>
+                ))
+              }
             </div>
           </div>
         </Col>
