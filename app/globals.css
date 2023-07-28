@@ -605,9 +605,15 @@ video.responsive-video {
   font-weight: 700;
   text-transform: uppercase;
 }
+.deskdeGizle{
+  display: none;
+}
 @media only screen and (min-width: 100px) and (max-width: 850px) {
   .MobildeGizle {
     display: none;
+  }
+  .deskdeGizle{
+    display: block;
   }
 }
 .hidden {
