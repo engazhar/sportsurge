@@ -81,7 +81,7 @@ export default function SoccerStream() {
                 ? "selected-sport" 
                 : ""}>
                 <a href={link.url} className='img-link' title={link.title}>
-                  <Image src={link.image} className="img-fuild" alt={link.title} width="76" height="76" />
+                  <Image src={link.image} className="img-fuild responsive-img" alt={link.title}/>
                 </a>
               </li>
             )
