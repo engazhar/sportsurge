@@ -2,6 +2,8 @@ import Link from 'next/link';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image';
+import { usePathname } from 'next/navigation';
+
 
 const links = [
     {
@@ -77,6 +79,7 @@ const links = [
 ]
 
 const Topnav = () => {
+    const currentRoute = usePathname();
     return (
         <Navbar bg="dark" data-bs-theme="dark" expand="lg" className='justify-content-between'>
           <Navbar.Brand href="/"><Image src="sportsurge.png" alt="Sportsurge" / ></Navbar.Brand>
@@ -85,7 +88,9 @@ const Topnav = () => {
             <Nav className="me-auto">
             {
                 links.map(link=>(
-                    <Nav.Link key={link.id} href={link.url}>{link.title}</Nav.Link>
+                    <Nav.Link className={currentRoute === link.url 
+                        ? "selected" 
+                        : ""} key={link.id} href={link.url}>{link.title}</Nav.Link>
                 ))
             }
             </Nav>

@@ -591,6 +591,23 @@ video.responsive-video {
   border: 1px solid #464646;
   border-bottom: none;
 }
+.middle-nav{
+  margin:8px 0;padding:0;text-align:center;display:flex;justify-content:center;align-items:center;
+}
+.middle-nav li{
+  margin-right:20px
+}
+.middle-nav li .img-link{
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+}
+.page-poster{
+  background-color: #101010;
+  border: 1px solid #242424;
+  border-right: unset;
+  border-left: unset;
+}
 .Basliklar div {
   height: 25px;
   font-weight: 600;
