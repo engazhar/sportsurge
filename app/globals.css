@@ -570,6 +570,12 @@ video.responsive-video {
   -webkit-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
+.blog-item .card-title{
+  color: #5db344 !important;
+}
+.blog-item .card-body{
+  color:#fff;
+}
 .MaclariListele {
   background: #3e3e3e;
   margin: auto;
