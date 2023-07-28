@@ -884,3 +884,6 @@ a {
 .item:hover a {
   color: #fff;
 }
+.popular-container{
+  background-color: #212121;
+}

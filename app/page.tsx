@@ -90,6 +90,28 @@ export default function Home() {
             </div>
           </Col>
         </Row>
+
+        <Col xs={12} lg={12} xl={{ span: 10, offset: 1 } }>
+          <h3>Today Popular Events</h3>
+          <div className="popular-container">
+            <div className="MobildeGizle">
+              <Row className="Basliklar m-auto">
+                <Col className="text-center">
+                Event
+                </Col>
+                <Col className="MobildeGizle text-center">
+                  League
+                </Col>
+                <Col className="text-center">
+                TIME
+                </Col>
+                <Col className="text-center">
+                WATCH
+                </Col>
+              </Row>
+            </div>
+          </div>
+        </Col>
       </Container>
 
     </main>
