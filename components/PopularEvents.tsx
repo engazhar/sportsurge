@@ -26,7 +26,6 @@ const pop_events= [
   ]
 const PopularEvents = () => {
     return (
-        <Col xs={12} lg={12} xl={{ span: 10, offset: 1 } }>
           <div className="popular-container">
             <div className="MobildeGizle">
               <Row className="Basliklar">
@@ -92,7 +91,6 @@ const PopularEvents = () => {
                 ))
               }
           </div>
-        </Col>
     )
 }
 

@@ -73,6 +73,7 @@ export default function SoccerStream() {
         </Container>
       </div>
       <Container>
+      <Col xs={12} lg={12} xl={{ span: 10, offset: 1 } }>
         <ul className="middle-nav">
           
           {
@@ -91,7 +92,6 @@ export default function SoccerStream() {
         <PopularEvents/>
         <br/>
         <Row>
-        <Col xs={12} lg={12} xl={{ span: 10, offset: 1 } }>
           <h1><strong>Reddit SOCCER Streams</strong></h1>
           <h2><strong>Watch SOCCER on Sportsurge Streams</strong></h2>
           <p>Sportsurge is an aggregator that allows SOCCER fans to watch all the SOCCER games in one place. Each match is available in multiple viewing streams. This gives you the opportunity to enjoy a match in HD, if your internet connection is strong enough, or watch it in a lower quality stream if your connection speeds are slow.</p>
@@ -107,10 +107,9 @@ export default function SoccerStream() {
           <p>Nowadays, SOCCER live streams are an important part of the fan experience. Fans can now watch their favorite teams on any device, regardless of location.</p>
           <h2>Reddit Live SOCCER Streams</h2>
           <p>SOCCER streams are a great way to watch games. The SOCCER has been experimenting with streaming the games on various platforms and it is showing promising results.</p>
-        </Col>
       </Row>
+      </Col>
       </Container>
-      
       <Footer/>
     </main>
   )}

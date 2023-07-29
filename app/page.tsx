@@ -26,12 +26,14 @@ export default function Home() {
         <br/>
         <SportList/>
         <br/>
+        <Col xs={12} lg={12} xl={{ span: 10, offset: 1 } }>
         <h3>Today Popular Events</h3>
         <PopularEvents/>
         <br/>
         <Blog/>
         <br/>
         <About/>
+        </Col>
       </Container>
       <Footer/>
     </main>
