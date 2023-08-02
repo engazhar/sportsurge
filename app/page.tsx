@@ -8,8 +8,12 @@ import Link from 'next/link';
 import Head from 'next/head'
 import About from '@/components/About';
 import Blog from '@/components/Blog';
+import { NextRequest, NextResponse } from 'next/server'
+import { revalidateTag } from 'next/cache'
 
-export default function Home() {
+
+
+export default async function Home() {
   return (
     <main className="overflow-hidden">
       <Head>
@@ -30,7 +34,7 @@ export default function Home() {
         <h3>Today Popular Events</h3>
         <PopularEvents/>
         <br/>
-        <Blog/>
+        <Blog />
         <br/>
         <About/>
         </Col>

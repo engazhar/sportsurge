@@ -82,7 +82,7 @@ const Topnav = () => {
     const currentRoute = usePathname();
     return (
         <Navbar bg="dark" data-bs-theme="dark" expand="lg" className='justify-content-between'>
-          <Navbar.Brand href="/"><Image src="sportsurge.png" alt="Sportsurge" / ></Navbar.Brand>
+          <Navbar.Brand href="/"><Image src="/sportsurge.png" alt="Sportsurge" / ></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
