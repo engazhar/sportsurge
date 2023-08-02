@@ -11,7 +11,7 @@ export default function Blog() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("https://strapp.store/sportsurge/blog");
+      const response = await fetch("https://strapp.store/sportsurge/blog", {mode: "no-cors",});
       const data = await response.json();
       setData(data);
     };
